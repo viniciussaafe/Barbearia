@@ -1,0 +1,474 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #0D0D0E;
+    color: white;
+    overflow-x: hidden;
+}
+
+:root {
+    --titulo--color: #f6a302;
+    --abas--color: #ffffff;
+    --corpo--color: #000000;
+    font-family: 'League Spartan', 'Lora', 'Bukhari Script';
+}
+
+/*---------------------------------BARRA DE NAVEGAÇAO---------------------------------*/
+
+.navbar {
+    /*border: red 1px solid;*/
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: #000000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 290px;
+
+}
+
+.logo img {
+    /*border: rgb(255, 251, 0) 1px solid;*/
+    float: left;
+    width: 130px;
+    height: auto;
+    position: relative;
+}
+
+.logo h1 {
+    /* border: rgb(0, 255, 255) 1px solid; */
+    margin-left: 60px;
+    margin-top: 30px;
+    font-family: 'Bukhari Script';
+    font-size: 25px;
+    width: 250px;
+    position: absolute;
+    color: var(--titulo--color);
+}
+
+.menu {
+    /* border: rgb(255, 0, 191) 1px solid; */
+    padding: 10px;
+    margin-left: 570px;
+    padding: 10px;
+}
+
+.menu a {
+    /* border: rgb(38, 0, 255) 1px solid; */
+    color: var(--abas--color);
+    font-size: 20px;
+    padding: 12px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    font-family: 'Lora', sans-serif;
+}
+
+.menu a:hover {
+    color: var(--titulo--color);
+}
+
+/*---------------------------------HOME---------------------------------*/
+
+.home {
+    display: flex;
+    flex-flow: row;
+    padding: 6%;
+    background-image: url(/imagens/fundo.png);
+    background-size: cover;
+}
+
+.home h2 {
+    /* border: red 1px solid; */
+    color: var(--titulo--color);
+    font-size: 59px;
+    font-family: 'League Spartan';
+    width: 65%;
+    margin-right: 120px;
+    margin-top: 90px;
+}
+
+.home p {
+    /* border: #000000 2px solid; */
+    font-size: 25px;
+    font-family: 'Lora';
+    margin-right: 120px;
+    margin-bottom: 27px;
+    width: 70%;
+    color: var(--abas--color);
+}
+
+.home a {
+    margin-right: 120px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border: #f6a302 solid;
+    background-color: #f6a302;
+    color: var(--corpo--color);
+    border-radius: 36px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.imgL {
+    margin-right: 169px;
+}
+
+/*---------------------------------GALERIA---------------------------------*/
+
+#galeria {
+    /* border: solid 1px red; */
+    /* width: 100%; */
+    /* height: auto; */
+    margin-top: 150px;
+}
+
+.texto_galeria {
+    display: flex;
+    align-items: center; /* Para centralizar verticalmente */
+    justify-content: center; /* Para centralizar horizontalmente */
+    flex-direction: column;
+}
+
+.texto_galeria h2 {
+    /* border: solid 1px green; */
+    display: inline-block; 
+    color: #E89900;
+    font-size: 45px;
+}
+
+.texto_galeria p {
+    /* border: solid 1px rgb(0, 255, 157); */
+    font-size: 25px;
+    margin: 0% 10% 10% 10%;
+    text-align: center;
+}
+
+/* -----------------------imgens do corte------------------------ */
+
+
+.carrossel {
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    gap: 25px;
+}
+
+#img {
+    object-fit: cover;
+    height: 370px;
+    width: 500px;
+    margin-left: 50px;
+}
+
+#img img{
+    border-radius: 10%;
+}
+
+/*---------------------------------SOBRE---------------------------------*/
+
+#sobre {
+    /* border: green solid 1px; */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.sobre-Imagem {
+    margin-left: 9%;
+}
+
+.sobre-Imagem img {
+    /* border: solid 1px rgb(121, 255, 109); */
+    width: auto;
+    height: 350px;
+    margin-top: 45%;
+}
+
+.conteudoSobre {
+    /* border: solid 1px rgb(255, 209, 109); */
+    text-align: center;
+    width: 60%;
+    padding: 0 20px;
+    margin-left: 8%;
+}
+
+.conteudoSobre h2 {
+    color: #E89900;
+    font-size: 45px;
+    margin-bottom: 13%;
+    margin-right: 60%;
+}
+
+.conteudoSobre p {
+    font-size: 30px;
+    text-align: justify;
+    margin-top: 10px;
+    word-spacing: 1px;
+}
+
+/* -------------------------- FUNCIONARIOS ------------------------------- */
+
+.funcionario {
+    /* border: solid 1px rgb(255, 0, 200); */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20% 10% 20% 10%;
+}
+
+.funcionario h2 {
+    color: #E89900;
+    font-size: 45px;
+    margin-left: 165px;
+}
+
+.funcionario img {
+    margin-left: 140px;
+    height: 710px;
+}
+
+/*---------------------------------SERVIÇO---------------------------------*/
+
+#servico {
+    /* border: 1px solid red;  */
+    /* height: 768px; */
+    font-family: 'Lora';
+    margin-bottom: 120px;
+}
+
+.introducao_servicos {
+    /* border: 1px solid rgb(208, 255, 0);  */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 15px 37px 15px;
+}
+
+.introducao_servicos img {
+    margin-top: 50px;
+    width: 100px;
+}
+
+.introducao_servicos h2 {
+    /* border: 1px solid rgb(208, 255, 0); */
+    margin: 15px 0px 15px 0px;
+    color: #E89900;
+}
+
+.introducao_servicos p {
+    /* border: 1px solid rgb(208, 255, 0); */
+    margin: 0px 0px 0px 0px;
+}
+
+/*IMAGENS DO SERVIÇOS*/
+
+.servico {
+    /* border: 1px solid rgb(247, 0, 255); */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 78px;
+    /* padding-left: 133px;
+    padding-right: 134px; */
+    margin-bottom: 100px;
+}
+
+.corte1,
+.corte2,
+.corte3 {
+    /* border: 1px solid rgb(175, 36, 101); */
+    width: 314px;
+    height: 346px;
+    border-radius: 16PX;
+    display: flex;
+    align-items: center;
+    padding: 32px 38px 32px 38px;
+    /*PERGUNTA!
+    Qual é melhor, "align-items: center;" ou "padding: 32px 38px 32px 38px;" */
+    text-align: center; 
+    font-size: 20px;
+    overflow: hidden; /*Garante que o texto não ultrapasse os limites do contêiner */
+    background-image: url(imagens/cortando.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.corte1 p,
+.corte2 p,
+.corte3 p {
+    /* border: #E89900 solid 1px; */
+    margin: 0;
+}
+
+
+.corte1 .corte1_filho {
+    /* border: 1px solid rgb(175, 36, 101); */
+    width: 238px;
+    height: 283px;
+    font-size: 15px;
+}
+
+
+.servico2 {
+    /* border: 1px solid rgb(121, 145, 255); */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 78px;
+}
+
+.corte4,
+.corte5,
+.corte6 {
+    width: 314px;
+    height: 346px;
+    border-radius: 16PX;
+    display: flex;
+    align-items: center;
+    padding: 32px 38px 32px 38px;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden; /*Garante que o texto não ultrapasse os limites do contêiner */
+    background-image: url(imagens/cortando.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Valor {
+    color: #E89900;
+}
+
+/*---------------------------------AGENDAMENTO E CONTATO---------------------------------*/
+
+#agendamento_contato {
+    /* border: 1px solid rgb(0, 60, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #E89900;
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-top: 250px;
+    padding-bottom: 120px;
+}
+
+.agendamento {
+    /* border: 1px solid rgb(0, 255, 21); */
+    /* width: 1020.4px;
+    height: 269.1px; */
+    text-align: center;
+    margin-bottom: 6px;
+    font-size: 45px;
+}
+
+
+.texto_agendamento {
+    /* border: 1px solid rgb(255, 0, 212); */
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 1020.4px;
+}
+
+.contato {
+    /* border: 1px solid rgb(255, 102, 0); */
+    text-align: center;
+    font-size: 55px;
+
+}
+
+.texto_contato {
+    /* border: 1px solid rgb(255, 102, 0); */
+    color: white;
+    font-size: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 1020.4px;
+}
+
+/*---------------------------------RODAPE DO SITE---------------------------------*/
+
+.final {
+    /* border: solid 1px rgb(45, 102, 50); */
+    background: var(--corpo--color);
+    position: absolute;
+    display: flex;
+    height: 400px;
+    width: 100%;
+
+}
+
+.final h3 { 
+    display: flex;
+    color: var(--titulo--color);
+    font-size: 25px;
+    font-family: 'League Spartan';
+    width: 190px;
+    margin-left: 77px;
+}
+
+.endereco {
+    position: absolute;
+    width: 20%;
+    margin-left: 75px;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.redes {
+    display: flex;
+    position: relative;
+    width: 20%;
+    margin-left: 75px;
+}
+
+.redes a i {
+    font-size: 35px;
+    margin-top: 100px;
+    margin-left: 10px;
+} 
+
+
+.zap a {
+    display: flex;
+    position: relative;
+    margin-left: 85%;
+}
+
+.zap p {
+    position: relative;
+    font-family: 'League Spartan';
+    margin-left: 76%;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--titulo--color);
+}
